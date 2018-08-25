@@ -47,6 +47,21 @@ summary {
 }
 
 /**
+ * Correct ol, ul to no-bulletin
+ */
+ol, ul {
+  list-style: none;
+}
+
+ol a, ul a {
+  text-decoration: none;
+}
+
+ol li, ul li {
+  margin: 0;
+}
+
+/**
  * 1. Correct `inline-block` display not defined in IE 8/9.
  * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
  */

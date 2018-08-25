@@ -11,20 +11,31 @@
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-sacle=1">
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+
+  <!-- FontAwesome
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Google Analytics Tracking Code
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script async="" src="//www.google-analytics.com/analytics.js"></script>
 
 </head>
 <body>
@@ -32,10 +43,52 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
+    <!-- <div class="three columns sidebar">
+      <nav>
+        <h3>Bryan Chun</h3>
+      </nav>
+    </div> -->
+    <!-- Sidebar -->
     <div class="row">
-      <div class="one-half column" style="margin-top: 25%">
-        <h4>Basic Page</h4>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
+      <div class="three columns"> <!-- three sidebar  -->
+        <nav>
+          <img src="images/bryan_square.png" id="dp" />
+          <h1 id="name">Bryan Chun</h1>
+          <ul>
+            <li><a href="https://bryanchun.github.io/blog/">
+              <span class='red'>Blog</span>
+            </a></li>
+            <li><a href="#whoami">Who am I?</a></li>
+              <!--vision-->
+              <!--quotes-->
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+              <!--see prev blog-->
+          </ul>
+          <div class="app-bar">
+            <a href="#"><i class="fa fa-medium"></i></a> 
+            <a href="#"><i class="fa fa-github"></i></a> 
+            <a href="#"><i class="fa fa-linkedin"></i></a> 
+          </div>
+        </nav>
+      </div>
+      <div class="eight columns offset-vert"> <!-- twelve  content -->
+        <h5>What is left in life that must be rescued?</h5>
+        <!-- How to add gallery photos dynamically ? -->
+        <section id="whoami">
+          <h3>Who am I?</h3>
+        </section>
+        <section id="education">
+          <h3>Education</h3>
+        </section>
+        <section id="projects">
+          <h3>Projects</h3>
+          <!-- How to add items/views dynamically ? -->
+        </section>
+        <section id="hobbies">
+          <h3>Hobbies</h3>
+        </section>
       </div>
     </div>
   </div>

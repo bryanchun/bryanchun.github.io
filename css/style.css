@@ -1,0 +1,90 @@
+/*
+* Copyright 2018, Bryan Chun
+* Under the MIT license.
+* 08/25/2018
+*/
+
+
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+- app-bar
+- sidebar
+- content
+*/
+
+
+/* app-bar: medium, github, linkedin
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.app-bar {
+  width: 100%;
+  overflow: auto;
+}
+
+.app-bar a {
+  width: 33%;
+  float: left;
+  text-align: center;
+  padding: 5% 0;
+  color: #444;
+  font-size: 130%;
+}
+
+.app-bar a:hover {
+  color: #000;
+}
+
+/* sidebar customisations
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.container #dp {
+  display: block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10% 0;
+}
+
+#name {
+  text-align: center;
+  font-size: 150%;
+  font-family: "Noto Sans";
+  font-weight: bold;
+}
+
+nav {
+  /* nav text scales with window */
+  font-size: 100%
+}
+
+nav ul li a, nav ul li a:visited, nav ul li a:active {
+  font-size: 100%;
+  font-weight: 600;
+  color: #555;
+  padding: 0 15%;
+  margin: 0;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+  color: #000;
+}
+
+/* content customisations
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.offset-vert {
+  margin-top: 5%;
+}
+
+
+/**
+ * TODO
+ * 1. Colour Palette
+ * 2. favicon
+ * 3. Window squeeze threshold
+ *
+ * - extralight weight || fonts
+ * - content supply
+ * - personal flavours
+ * - project and gallery management
+ */
