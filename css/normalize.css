@@ -47,11 +47,8 @@ summary {
 }
 
 /**
- * Correct ol, ul to no-bulletin
+ * Correct ol ul to plain decoration
  */
-ol, ul {
-  list-style: none;
-}
 
 ol a, ul a {
   text-decoration: none;

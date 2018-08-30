@@ -43,51 +43,72 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
-    <!-- <div class="three columns sidebar">
-      <nav>
-        <h3>Bryan Chun</h3>
-      </nav>
-    </div> -->
-    <!-- Sidebar -->
     <div class="row">
-      <div class="three columns"> <!-- three sidebar  -->
+      <div class="three columns sidebar">
         <nav>
           <img src="images/bryan_square.png" id="dp" />
           <h1 id="name">Bryan Chun</h1>
-          <ul>
+          <p class="oneliner">Above all else,</p>
+          <p class="oneliner">Guard your heart.</p>
+          <ul id="sections">
             <li><a href="https://bryanchun.github.io/blog/">
               <span class='red'>Blog</span>
             </a></li>
             <li><a href="#whoami">Who am I?</a></li>
               <!--vision-->
               <!--quotes-->
+              <!--uniqueness of my experience-->
             <li><a href="#education">Education</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#hobbies">Hobbies</a></li>
               <!--see prev blog-->
           </ul>
           <div class="app-bar">
-            <a href="#"><i class="fa fa-medium"></i></a> 
-            <a href="#"><i class="fa fa-github"></i></a> 
-            <a href="#"><i class="fa fa-linkedin"></i></a> 
+            <a href="https://medium.com/@Bxy24"><i class="fa fa-medium"></i></a> 
+            <a href="https://github.com/bryanchun"><i class="fa fa-github"></i></a> 
+            <a href="https://www.linkedin.com/in/bryanchunhk/"><i class="fa fa-linkedin"></i></a> 
           </div>
         </nav>
       </div>
-      <div class="eight columns offset-vert"> <!-- twelve  content -->
-        <h5>What is left in life that must be rescued?</h5>
-        <!-- How to add gallery photos dynamically ? -->
+      <div class="eight columns content">
+
+        <!--Gallery-->
+        <section id="gallery"></section>
+
         <section id="whoami">
-          <h3>Who am I?</h3>
+          <h4>Who am I?</h4>
+
         </section>
+        <hr class="divider">
+
         <section id="education">
-          <h3>Education</h3>
+          <h4>Education</h4>
+          <ul>
+            <li>Bachelor of Engineering in Computer Science, HKUST</li>
+            <ul>
+              <li>Class of 2020</li>
+              <li>Minor in Mathematics</li>
+            </ul>
+            <li>Queen's College, Hong Kong</li>
+          </ul>
         </section>
+        <hr class="divider">
+        
+        <section id="work">
+          <h4>Work experience</h4>
+
+        </section>
+        <hr class="divider">
+
         <section id="projects">
-          <h3>Projects</h3>
+          <h4>Projects</h4>
           <!-- How to add items/views dynamically ? -->
         </section>
+        <hr class="divider">
+        
         <section id="hobbies">
-          <h3>Hobbies</h3>
+          <h4>Hobbies</h4>
+
         </section>
       </div>
     </div>
@@ -97,3 +118,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>
+
+<!-- Credits:
+     template from http://lilianweng.github.io/
+   -->
