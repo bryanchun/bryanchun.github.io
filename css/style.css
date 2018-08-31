@@ -7,9 +7,11 @@
 
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
-- app-bar
+- background
 - sidebar
+- app-bar
 - content
+- sections
 */
 
 /* background
@@ -112,7 +114,7 @@ nav ul li a:hover, nav ul li a:focus {
 }*/
 
 .content {
-  margin-top: 5%;
+  margin-top: 2%;
 }
 
 .content h3 {
@@ -144,10 +146,43 @@ hr.divider {
   margin-top: 0;
 }
 
+/* sections customisations
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.content #whoami {
+  background-color: #FAF1E5;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  padding: 8% 14%;
+  margin: 5% 0;
+}
+
+.project {
+  margin: 2% 0;
+}
+
+.project p {
+  margin: 0;
+}
+
+.project .title {
+  font-weight: bold;
+  font-size: 120%;
+}
+
+.project .details {
+  color: #111;
+}
+
+.project .organisation {
+  font-style: italic;
+  color: #777;
+}
+
 /**
  * TODO
  * 1. Colour Palette
- * 2. favicon
+ * 2. favicon transparent background
  * 3. Window squeeze threshold
  *
  * - extralight weight || fonts
