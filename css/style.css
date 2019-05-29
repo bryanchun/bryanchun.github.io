@@ -96,10 +96,10 @@ nav ul li a:hover, nav ul li a:focus {
 }
 
 .app-bar a {
-  width: 10%;
-  float: left;
+  width: 25%;
+  /* float: left; */
   text-align: center;
-  padding: 5% 10%;
+  padding: 2% 5%;
   color: #444;
   font-size: 100%;
 }
