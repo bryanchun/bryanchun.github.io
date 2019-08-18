@@ -24,18 +24,19 @@ body {
   padding: 0;
 }
 
+[v-cloak] {
+  display: none;
+}
+
 /* sidebar customisations
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-/*.container .three {
-  background-color: #191A2C;
-}*/
 
 .sidebar {
   font-family: "Noto Sans";
 }
 
-.sidebar #dp {
+#nav #dp {
   display: block;
   /* height: 25%; */
   border-radius: 50%;
@@ -44,14 +45,14 @@ body {
   margin-right: auto;
   padding: 10% 0;
 }
-.sidebar #name {
+#nav h1 {
   text-align: center;
   font-size: 225%;
   font-weight: bold;
   margin-bottom: 1.0rem;
 }
 
-.sidebar .oneliner {
+#nav p {
   text-align: center;
   font-weight: bold;
   margin-bottom: 0;
@@ -111,10 +112,6 @@ nav ul li a:hover, nav ul li a:focus {
 /* content customisations
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-/*.container .eight {
-  background-color: #AEA093;
-}*/
-
 .content {
   margin-top: 2%;
 }
@@ -163,6 +160,15 @@ hr.divider {
   font-size: 18px;
 }
 
+#whoami b {
+  font-weight: bold;
+  color: #367;
+}
+
+#whoami #quoteimg {
+  width: auto; 
+}
+
 .project {
   margin: 2% 0;
 }
@@ -171,16 +177,16 @@ hr.divider {
   margin: 0;
 }
 
-.project .title {
+#education .title, .project .title {
   font-weight: bold;
   font-size: 120%;
 }
 
-.project .details {
+#education .details, .project .details {
   color: #111;
 }
 
-.project .time {
+#education .time, .project .time {
   color: #367;
 }
 
@@ -211,7 +217,9 @@ blockquote {
   padding: 15px;
   margin: 5px;
   border-radius: 5px;
-  background: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: rgb(20, 55, 66);
+  color: #fff
 }
 
 /**

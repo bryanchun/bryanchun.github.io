@@ -47,236 +47,158 @@
     gtag('config', 'UA-141136622-1');
   </script>
 
+  <!-- Vue.js
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- development version, includes helpful console warnings -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+  <!-- js-yaml
+  https://github.com/nodeca/js-yaml
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/3.13.1/js-yaml.min.js"></script>
 
 </head>
 <body>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
+  <div id="app">
+    <div class="container">
 
-    <div class="row">
-      <div class="eleven columns featurepane">
-        <section id="gallery"></section>
+      <div class="row">
+        <div class="eleven columns featurepane">
+          <section id="gallery"></section>
+        </div>
       </div>
-    </div>
 
-    <div class="row">
-      <div class="three columns sidebar">
-        <nav>
-          <a href="https://bryanchun.github.io"><img src="images/bryan_dc.jpg" id="dp" /></a>
-          <h1 id="name">Bryan Chun</h1>
-          <p class="oneliner">Above all else,</p>
-          <p class="oneliner">Guard your heart.</p>
-          <ul id="sections">
-            <!-- <li><a href="https://bryanchun.github.io/blog/">
-              <span class='red'>Blog</span>
-            </a></li> -->
-            <li><a href="#whoami">About Me</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#projects-experience">Projects</a></li>
-            <!-- <li><a href="#hobbies">Hobbies</a></li> -->
-          </ul>
-          <div class="app-bar">
-            <a href="mailto:hschun@connect.ust.hk" title="Email"><i class="fa fa-at"></i></a> 
-            <a href="https://medium.com/@Bxy24" title="Medium"><i class="fa fa-medium"></i></a> 
-            <a href="https://github.com/bryanchun" title="GitHub"><i class="fa fa-github"></i></a> 
-            <a href="https://www.linkedin.com/in/bryanchunhk/" title="LinkedIn"><i class="fa fa-linkedin"></i></a> 
-          </div>
-        </nav>
-      </div>
-      <div class="eight columns content">
+      <div class="row">
+        <div class="three columns sidebar">
+          <nav id="nav" v-cloak>
 
-        <section id="whoami">
-          <p>Aspiring software developer and researcher, Computer science student from Hong Kong studying in HKUST.</p>
-          <hr class="divider">
-          <p></p>
-          <p>Greetings! I'm Bryan with a 'y'. Thanks for dropping by.</p>
-          <!-- <p>I am a passionate person that I want to immerse into things I enjoy and get the most out of it. Lots of things interest me actually! The whole array includes coding and sciences, Wikipedia and literature, social sciences and photography, Japanese and people's stories, calligraphy and etymology, movies and travelling, TED videos and xkcd comics, quotes and gadgets and crafts.</p>
-          <p>What are they in common? Creativity. I love expressing my ideas and make them happen. These are my insprations and my media of expression.</p> -->
-          <p>I see programming as a medium of expression and computer science as a science/art of modelling things and automating them. That's why I am interested in a multitude of topics:</p>
-          <ul>
-            <li><i>Artificial Intelligence & Machine/Deep Learning & Data Science</i>: having worked on a number of course and internship projects in this area, I am excited to see how data can enhance what we can currently do</li>
-            <li><i>Programming Languages & Functional Programming</i>: I did research and is actively learning in this area, concerning language design, features and paradigms; especially functional ones</li>
-            <li><i>Intersection of Mathematics and Computer Science</i>: as part of my math minor, I took courses in probability and data science, and is keen on learning about topics like algebra for programming languages, formal methods with logic, computability theory and algorithmic game theory</li>
-            <li>Currently learning about Security, Cryptography and Blockchain</li>
-          </ul>
-          <p>Apart from these, I am an avid photographer when I travel, and love calligraphy, graphic design and collecting quotes. You can also find me in badminton courts or matcha spots hunting.</p>
-            <!--vision-->
-            <!--quotes-->
-            <!--uniqueness of my experience-->
-          <blockquote>Nothing is a mistake. There's no win and no fail. There's only make.</blockquote>
-          <cite>– John Cage in Stanford d.lab</cite>
-        </section>
-        <div class="button-wrapper"><a href="https://raw.githubusercontent.com/bryanchun/bryanchun.github.io/master/CV.pdf" class="button">CV</a></div>
-        <!-- <hr class="divider"> -->
+            <a :href="url">
+              <img :src="dp_path" id="dp" />
+            </a>
+            <h1>{{ name }}</h1>
+            <p v-for="line in oneliner">
+              {{ line }}
+            </p>
 
-        <section id="education">
-          <h4>Education</h4>
-          <ul>
-            <li>Bachelor of Engineering in Computer Science, Hong Kong University of Science and Technology (HKUST), HK <i>2016-2020</i></li>
-            <ul>
-              <li>Minor in Mathematics</li>
+            <ul id="sections">
+              <!-- <li><a href="https://bryanchun.github.io/blog/">
+                <span class='red'>Blog</span>
+              </a></li> -->
+              <li><a href="#whoami">About Me</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#work">Work</a></li>
+              <li><a href="#projects-experience">Projects</a></li>
+              <!-- <li><a href="#hobbies">Hobbies</a></li> -->
             </ul>
-            <li>Exchange Student, Georgia Institute of Technology, USA <i>Spring 2019</i></li>
-            <li>Queen's College, Hong Kong</li>
-          </ul>
-        </section>
-        <hr class="divider">
-        
-        <section id="work">
-          <h4>Work experience</h4> 
-          <ul>
-            <li>
-              <div class="project">
-              <p class="title">Summer Intern 2018 @ Cyber Security & Analytics Group, Security & Data Sciences Division</p>
-              <p class="organisation"><a href="https://www.astri.org">Hong Kong Applied Science and Technology Research Institute (ASTRI)</a></p>
-              </div>
-            </li>
-          </ul>
-        </section>
-        <hr class="divider">
+            <div class="app-bar">
+              <a :href="mailto" title="Email"><i class="fa fa-at"></i></a> 
+              <a :href="medium" title="Medium"><i class="fa fa-medium"></i></a> 
+              <a :href="github" title="GitHub"><i class="fa fa-github"></i></a> 
+              <a :href="linkedin" title="LinkedIn"><i class="fa fa-linkedin"></i></a> 
+            </div>
+          </nav>
+        </div>
 
-        <section id="projects-experience">
-          <h4>Projects & Experience</h4>
-          <ul>
-            <li>
-              <div class="project">
-              <p class="title">Reddit Aparecium: Reddit Discussion Visualization and Analysis</p>
-              <p class="time">Jan - Apr 2019</p>
-              <p class="details">Reddit Post topic modelling by Latent Dirichlet Allocation and visualization</p>
-              <p class="details">> Python (Flask, Gensim), JavaScript (d3.js, Vue.js)</p>
-              <p class="details"><a href="https://jakkarintiew.github.io/reddit-aparecium">Website</a> | <a href="https://www.dropbox.com/s/cbwg4qr1n9gt49i/team15poster.pdf?dl=0">Poster</a></p>
-              <p class="organisation">Georgia Institute of Technology, CX4242 Data and Visual Analytics Course Team Project</p>
-              </div>
-            </li>
-            <li>
-              <div class="project">
-              <p class="title">Survey in the functional programming paradigm for blockchain applications</p>
-              <p class="time">Sep - Dec 2018</p>
-              <p class="details">My first dive into functional languages and their theories</p>
-              <p class="details">The research direction was to use programming language features to better ensure quality smart contract programs, 
-                since smart contracts is a good domain for high-assurance software that is recently gaining attention, and may make a good functional pearl for features like dependent types</p>
-              <p class="details">> Truffle, Web3, Haskell, Idris</p>
-              <p class="details"><a href="https://www.dropbox.com/s/v4dbn4amb7infzk/UROP1100V_CHUN%20Hiu%20Sang.pdf?dl=0">Report</a></p>
-              <p class="organisation">Undergraduate Research Opportunities Program, HKUST</p>
-              </div>
-            </li>
-            <li>
-              <div class="project">
-              <p class="title">Research Assistant</p>
-              <p class="time">Aug 2018</p>
-              <p class="details">Assisted in data collection and research in MOOC data mining for student churn prediction</p>
-              <p class="organisation">System and Media Lab, Computer Science and Engineering Department, HKUST</p>
-              </div>
-            </li>
-            <li>
-              <div class="project">
-              <p class="title">Exploration of Deepfakes</p>
-              <!--TODO: Add github if any, add card UI-->
-              <p class="time">Jun - Jul 2018</p>
-              <p class="details">In-house research project on reproducing face-swapping samples between two people, using latest deep learning architectures (e.g. VAE and various GANs), and for probing into its security impact</p>
-              <p class="details">> Python, TensorFlow/Keras, Linux environment, CUDA GPUs</p>
-              <p class="organisation"><a href="https://www.astri.org">Hong Kong Applied Science and Technology Research Institute (ASTRI)</a></p>
-              </div>
-            </li>
-            <li>
-              <div class="project">
-              <p class="title">Maglev App</p>
-              <p class="time">Apr 2018</p>
-              <p class="details">Created the bluetooth controller for LED lights on a magnetically levitated lamp as an Android App</p>
-              <p class="details">Done as a quick prototype during a day in a hackathon for proof-of-concept on my own</p>
-              <p class="details">> Kotlin, Android</p>
-              <p class="details"><a href="https://github.com/bryanchun/maglev_app">GitHub</a></p>
-              <p class="organisation"><a href="https://www.seng.ust.hk/web/eng/thirdcat.php?catid=2&subid=11&thirdid=102">Undergraduate Student-initiated Experiential Learning (USEL) Program</a>, SENG, HKUST</p>
-              </div>
-            </li>
-            <li>
-              <div class="project">
-              <p class="title">Xmotion: Emotional tracking and scoring of schoolchildren</p>
-              <p class="time">Jan - Apr 2018</p>
-              <p class="details">Developed a system to detect faces and emotions of schoolchildren, and record relevant statistics for profiling emotional state of the school and find out potential needy persons</p>
-              <p class="details">> Microsoft Azure Cognitive Services & PowerBI, Python, RaspberryPi</p>
-              <p class="organisation">Microsoft Imagine Cup 2018 & Microsoft Big Idea Challenge 2018 Honorable Mention Team & HKUST-Sino One Million Entrepreneurship Competition, Robotics & AI Award</p>
-              </div>
-            </li>
-            <li>
-              <div class="project">
-              <p class="title">Job By Vision</p>
-              <p class="time">Jan - Apr 2018</p>
-              <p class="details">Student-run initiative giving workshops for exploring alternative careers</p>
-              <p class="details">Product designer Cyrus Lee was invited to give an interactive workshop to more than 20 HKUST students, crafting <a href="https://www.blackbody.co/openwallet">Open Wallets</a> and sharing personal experience</p>
-              <!-- <p class="details">Photos</p> -->
-              <p class="organisation">HKUST Student Enrichment Activities Fund Spring 2018 & HKUST SAO REDbird Leadership Community</p>
-              </div>
-            </li>
-            <li>
-              <div class="project">
-              <p class="title">UI Designer and Android Developer</p>
-              <p class="time">Jan 2017 - Feb 2018</p>
-              <p class="details">Responsible for homepage revamp and booking revamp UI designs mockups, and communication with developers for feedback and refinements</p>
-              <p class="details">> Sketch, Zeplin</p>
-              <p class="details">Contributed to codebase for TimeMatch feature and Bug Reporter feature</p>
-              <p class="details">> Java, Android (with Android Studio)</p>
-              <p class="organisation"><a href="https://www.usthing.xyz/">USThing</a>, a student-made student app in HKUST</p>
-            </li>
-            <li>
-              <div class="project">
-              <p class="title">Participant of Exploring Social Innovation (ESI) Program</p>
-              <p class="time">Jul 2017</p>
-              <p class="details">Joining a cohort of participants from various Asian countries to study social innovation and Stanford Design Thinking in the San Francisco Area, with a focus on Education</p>
-              <p class="details">Through workshops, nonprofit/company visits, a social innovation project and presentation on facilitating career exploration of college students</p>
-              <p class="details">> Design Thinking Methodology, Design Sprints</p>
-              <!-- <p class="details">Photos</p> -->
-              <p class="organisation"><a href="https://viaprograms.org/">Volunteers in Asia (VIA)</a> & HKUST SAO REDbird Overseas Learning Program</p>
-              </div>
-            </li>
-            <li>
-              <div class="project">
-              <p class="title">Procal: Programmable Scientific Calculator for Android</p>
-              <p class="time">Oct 2016 - Feb 2017, Aug - Sep 2017</p>
-              <p class="details"></p>
-              <p class="details">Awarded First Runner-up, Best UI Award, Best Presentation Award, Best Poster Award</p>
-              <p class="details">> Java, Android (with Android Studio)</p>
-              <p class="details"><a href="https://www.dropbox.com/s/4dvkkcsx7u1pjb0/Procal.pdf?dl=0">Slides</a> | <a href="https://www.dropbox.com/s/pwn2yw4u2ah5p6b/Procal%20-%20academic%20poster.jpg?dl=0">Poster</a></p>
-              <p class="details"><a href="https://github.com/danvim/procal">GitHub (Android)</a> | <a href="https://github.com/danvim/procalparsing">GitHub (parsing)</a> | <a href="https://github.com/ProcalApp">GitHub (latest)</a></p>
-              <p class="organisation">Mobile App Development Contest, Computer Science and Engineering Department, HKUST </p>
-              </div>
-            </li>
-          </ul>
-          <!-- How to add items/views dynamically ? -->
+        <div class="eight columns content">
 
-          <!--deepfakes (how much public)-->
-          <!--imagine cup & hkust-sino-->
-          <!--Redbird-->
-            <!--job by vision-->
-            <!--volunteer service-->
-            <!--mentorship & networking?-->
-          <!--exploring social innovation-->
-          <!--usthing-->
-            <!--java and kotlin-->
-            <!--ui design-->
-          <!--procal-->
-        </section>
-        <hr class="divider">
-        
-        <!-- <section id="hobbies">
-          <h4>Hobbies</h4> -->
-          <!--see prev blog-->
-          <!--philosophising-->
-          <!--photography-->
-          <!--design-->
-          <!--calligraphy-->
-        
-        <!--TODO; Blog learning notes as md-->
-        </section>
+          <section id="whoami" v-cloak>
+
+            <p>{{ sections.whoami.punchline }}</p>
+            <hr class="divider">
+            <p></p>
+
+            <span v-for="line in sections.whoami.body">
+              <ul v-if="line.topics">
+                <li v-for="topic in line.topics">
+                  <b>{{ topic.name }}</b><span v-if="topic.name">: </span>
+                  <span>{{ topic.desc }}</span>
+                </li>
+              </ul>
+              <p v-else>{{ line }}</p>
+            </span>
+
+            <hr class="divider">
+            <p></p>
+
+            <blockquote>Nothing is a mistake.
+              There's no win and no fail.
+              There's only make. - John Cage in Stanford d.lab</blockquote>
+            
+            <!-- <hr class="divider"> -->
+          </section>
+          
+
+          <section id="education" v-cloak>
+            <h4>Education</h4>
+            <ul>
+              <li v-for="study in sections.education">
+                <span>{{ study.name }}</span>
+                <ul v-if="study.notes" v-for="note in study.notes" class="details">
+                  <li>{{ note }}</li>
+                </ul>
+                <p class="time">{{ study.time }}</p>
+              </li>
+            </ul>
+            <hr class="divider">
+          </section>
+          
+          <section id="work" v-cloak>
+            <h4>Work experience</h4> 
+            <ul>
+              <li v-for="job in sections.work" class="project">
+                <p class="title">{{ job.title }}</p>
+                <p class="organisation"><a :href="job.url">{{ job.organisation }}</a></p>
+              </li>
+            </ul>
+            <hr class="divider">
+          </section>
+
+          <section id="projects-experience" v-cloak>
+            <h4>Projects & Experience</h4>
+            <ul>
+              <li v-for="project in sections.projects">
+                <div class="project">
+                  <p class="title">{{ project.title }}</p>
+                  <p class="time">{{ project.time }}</p>
+                  <span v-for="detail in project.details" class="details">
+                    <span v-html="detail"></span>
+                    {{ }}
+                  </span>
+                  <p class="details">{{ project.tech }}</p>
+                  <p class="details">
+                    <a v-for="(artifact, i) in project.artifacts" :href="artifact.url">
+                      {{ artifact.name }}
+                      <span v-if="i < project.artifacts.length - 1"> | </span>
+                    </a> 
+                  </p>
+                  <p v-for="(organisation, i) in project.organisations" class="organisation">
+                    <a v-if="organisation.url" :href="organisation.url">{{ organisation.name }}</a>
+                    <span v-else>{{ organisation.name }}</span>
+                    <span v-if="organisation.trailing">, {{ organisation.trailing }}</span>
+                    <span v-if="i < project.organisations.length - 1"> & </span>
+                  </p>
+                </div>
+              </li>
+            <!-- <hr class="divider"> -->
+          </section>
+          
+        </div>
+
       </div>
     </div>
   </div>
 
-<!-- End Document
+  <!-- load_yaml utility import
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="js/load_yaml.js"></script>
+
+  <!-- Vue driver code
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="js/script.js"></script>
+
 </body>
 </html>
 

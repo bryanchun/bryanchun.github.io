@@ -1,0 +1,192 @@
+name: Bryan Chun
+url: bryanchun.github.io
+dp_path: images/bryan_dc.jpg    
+oneliner:
+    - Above all else,
+    - Guard your heart.
+contact:
+    email: hschun@connect.ust.hk
+    medium: Bxy24
+    github: bryanchun
+    linkedin: bryanchunhk
+sections:
+    whoami: 
+        punchline: Aspiring software developer and researcher, Computer science student from Hong Kong studying in HKUST.
+        body:
+            -   Greetings! I'm Bryan with a 'y'. Thanks for dropping by.
+            -   >
+                I see programming as a medium of expression and computer science as a science/art of modelling things and automating them. That's why I am interested in a multitude of topics:
+            -   topics:
+                -   name: Artificial Intelligence & Machine/Deep Learning & Data Science
+                    desc: having worked on a number of course and internship projects in this area, I am excited to see how data can enhance what we can currently do
+                -   name: Programming Languages & Functional Programming
+                    desc: I did research and is actively learning in this area, concerning language design, features and paradigms; especially functional ones
+                -   name: Intersection of Mathematics and Computer Science
+                    desc: as part of my math minor, I took courses in probability and data science, and is keen on learning about topics like algebra for programming languages, formal methods with logic, computability theory and algorithmic game theory
+                -   desc: Currently learning about Security, Cryptography and Blockchain
+            -   Apart from these, I am an avid photographer when I travel, and love calligraphy, graphic design and collecting quotes. You can also find me in badminton courts or matcha spots hunting.
+    education:
+        -   name: Bachelor of Engineering in Computer Science, Hong Kong University of Science and Technology (HKUST), Hong Kong
+            time: Sep 2016 - Jun 2020
+            notes:
+                -   Minor in Mathematics
+        -   name: Exchange Student, Georgia Institute of Technology, United States
+            time: Spring 2019
+        -   name: Queen's College, Hong Kong
+            time: 2010 - 2016
+    work:
+        -   title: Summer Intern 2018 @ Cyber Security & Analytics Group, Security & Data Sciences Division
+            organisation: Hong Kong Applied Science and Technology Research Institute (ASTRI)
+            url: https://www.astri.org
+    projects:
+        -   title: >
+                Privacy-preserving programmable interface for Blockchain-stored Data
+            time: Jun - Aug 2019
+            details:    # array
+                -   This project attempts to extend the Data Markets, where users can sell and buy data directly with one another online through a blockchain platform,
+                    to a more general data sharing and management solution, where individual data can be owned, transferred, and shared with others, through blockchain-enabled storage and privacy-preserving mechanisms.
+                -   This allows users to reduce reliance on third-party cloud platforms and have fine-grained control over their own data.
+                -   We propose a stack based on the IOTA Tangle to store and process data, and on top of which can allow publish/subscribe, permissioned data sharing, and customised data pipeline creation.
+                -   Work in progress.
+            tech: >       # optional
+                > IOTA
+            artifacts:  # array, optional
+                -   name: Report
+                    url: https://www.dropbox.com/s/cl2hhf5vrmptoo2/UROP2100X_CHUN%20Hiu%20Sang.pdf?dl=0
+            organisations:
+                -   name: Undergraduate Research Opportunities Program, HKUST
+        -   title: >
+                Reddit Aparecium: Reddit Discussion Visualization and Analysis
+            time: Jan - Apr 2019
+            details:
+                - Reddit Post topic modelling by Latent Dirichlet Allocation and visualization
+            tech: >     # optional
+                > Python (Flask, Gensim), JavaScript (d3.js, Vue.js)
+            artifacts:  # optional
+                -   name: Website
+                    url: https://jakkarintiew.github.io/reddit-aparecium
+                -   name: Poster
+                    url: https://www.dropbox.com/s/cbwg4qr1n9gt49i/team15poster.pdf?dl=0
+            organisations:
+                -   name: CX4242 Data and Visual Analytics Course Team Project, Georgia Institute of Technology
+        -   title: >
+                Survey in the functional programming paradigm for blockchain applications
+            time: Sep - Dec 2018
+            details:    # array
+                - My first dive into functional languages and their theories
+                - The research direction was to use programming language features to better ensure quality smart contract programs, 
+                  since smart contracts is a good domain for high-assurance software that is recently gaining attention, and may make a good functional pearl for features like dependent types
+            tech: >       # optional
+                > Truffle, Web3, Haskell, Idris
+            artifacts:  # array, optional
+                -   name: Report
+                    url: https://www.dropbox.com/s/v4dbn4amb7infzk/UROP1100V_CHUN%20Hiu%20Sang.pdf?dl=0
+            organisations:
+                -   name: Undergraduate Research Opportunities Program, HKUST
+        -   title: >
+                Research Assistant
+            time: Aug 2018
+            details:
+                - Assisted in data collection and research in MOOC data mining for student churn prediction
+            organisations:
+                -   name: System and Media Lab, Computer Science and Engineering Department, HKUST
+        -   title: >
+                Exploration of Deepfakes
+            time: Jun - Jul 2018
+            details:
+                - In-house research project on reproducing face-swapping samples between two people, using latest deep learning architectures (e.g. VAE and various GANs), and for probing into its security impact
+            tech: >
+                > Python, TensorFlow/Keras, Linux environment, CUDA GPUs
+            organisations:
+                -   name: Hong Kong Applied Science and Technology Research Institute (ASTRI)
+                    url: https://www.astri.org
+        -   title: >
+                Maglev App
+            time: Apr 2018
+            details:
+                - Created the bluetooth controller for LED lights on a magnetically levitated lamp as an Android App
+                - Done as a quick prototype during a day in a hackathon for proof-of-concept on my own
+            tech: >
+                > Kotlin, Android
+            artifacts:
+                -   name: GitHub
+                    url: https://github.com/bryanchun/maglev_app
+            organisations:
+                -   name: Undergraduate Student-initiated Experiential Learning (USEL) Program
+                    url: https://www.seng.ust.hk/web/eng/thirdcat.php?catid=2&subid=11&thirdid=102
+                    trailing: SENG, HKUST
+        -   title: >
+                Xmotion: Emotional tracking and scoring of schoolchildren
+            time: Jan - Apr 2018
+            details:
+                - Developed a system to detect faces and emotions of schoolchildren, and record relevant statistics for profiling emotional state of the school and find out potential needy persons
+            tech: >
+                > Microsoft Azure Cognitive Services & PowerBI, Python, RaspberryPi
+            organisations:
+                -   name: Microsoft Imagine Cup 2018
+                -   name: Microsoft Big Idea Challenge 2018 Honorable Mention Team
+                -   name: HKUST-Sino One Million Entrepreneurship Competition, Robotics & AI Award
+        -   title: >
+                Job By Vision
+            time: Jan - Apr 2018
+            details:
+                -   Student-run initiative giving workshops for exploring alternative careers
+                # -   Product designer Cyrus Lee was invited to give an interactive workshop to more than 20 HKUST students, crafting Open Wallets (https://www.blackbody.co/openwallet) and sharing personal experience
+                -   Product designer Cyrus Lee was invited to give an interactive workshop to more than 20 HKUST students, crafting <a href="https://www.blackbody.co/openwallet">Open Wallets</a> and sharing personal experience
+            organisations:
+                -   name: HKUST Student Enrichment Activities Fund Spring 2018
+                -   name: HKUST SAO REDbird Leadership Community
+        -   title:  >
+                UI Designer and Android Developer
+            time: Jan 2017 - Feb 2018
+            details:
+                -   Responsible for homepage revamp and booking revamp UI designs mockups, and communication with developers for feedback and refinements
+                -   Contributed to codebase for TimeMatch feature and Bug Reporter feature
+            tech: >
+                > Sketch, Zeplin; Java, Android, Android Studio
+            organisations:
+                -   name: USThing
+                    url: https://www.usthing.xyz/
+                    trailing: a student-made student app in HKUST
+        -   title: >
+                Participant of Exploring Social Innovation (ESI) Program
+            time: Jul 2017
+            details:
+                - Joining a cohort of participants from various Asian countries to study social innovation and Stanford Design Thinking in the San Francisco Area, with a focus on Education
+                - Through workshops, nonprofit/company visits, a social innovation project and presentation on facilitating career exploration of college students
+            tech: >
+                > Design Thinking Methodology, Design Sprints
+        -   title: >
+                Procal: Programmable Scientific Calculator for Android
+            time: Oct 2016 - Feb 2017, Aug - Sep 2017
+            details:
+                - Awarded First Runner-up, Best UI Award, Best Presentation Award, Best Poster Award
+            tech: >
+                > Java, Android, Android Studio
+            artifacts:
+                -   name: Slides
+                    url: https://www.dropbox.com/s/4dvkkcsx7u1pjb0/Procal.pdf?dl=0
+                -   name: Poster
+                    url: https://www.dropbox.com/s/pwn2yw4u2ah5p6b/Procal%20-%20academic%20poster.jpg?dl=0
+                -   name: GitHub (Android)
+                    url: https://github.com/danvim/procal
+                -   name: GitHub(parsing)
+                    url: https://github.com/danvim/procalparsing
+                -   name: GitHub (latest)
+                    url: https://github.com/ProcalApp
+            organisations:
+                -   name: Mobile App Development Contest, Computer Science and Engineering Department, HKUST
+
+        # -   title: >
+        #     time:
+        #     details:        # array
+        #         -   name:
+        #             url:
+        #     tech: >         # optional
+        #     artifacts:      # array, optional
+        #         -   name:
+        #             url:
+        #     organisations:  # array
+        #         -   name:
+        #         -   url:    # optional
+
