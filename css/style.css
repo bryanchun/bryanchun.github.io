@@ -40,11 +40,17 @@ body {
   display: block;
   /* height: 25%; */
   border-radius: 50%;
-  width: 50%;
+  width: 30%;
   margin-left: auto;
   margin-right: auto;
   padding: 10% 0;
 }
+@media (min-width: 550px) {
+  #nav #dp {
+    width: 50%;
+  }
+}
+
 #nav h1 {
   text-align: center;
   font-size: 225%;
