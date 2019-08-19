@@ -171,9 +171,16 @@ hr.divider {
   color: #367;
 }
 
-#whoami #quoteimg {
-  width: auto; 
-}
+/* #whoami #quoteimg {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  transform: rotate(270deg);
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 0px;
+} */
 
 .project {
   margin: 2% 0;
@@ -219,7 +226,7 @@ hr.divider {
   text-align: center;
 }
 
-blockquote {
+.quote {
   padding: 15px;
   margin: 5px;
   border-radius: 5px;

@@ -107,8 +107,7 @@
           <section id="whoami" v-cloak>
 
             <p>{{ sections.whoami.punchline }}</p>
-            <hr class="divider">
-            <p></p>
+            <hr class="divider"><br />
 
             <span v-for="line in sections.whoami.body">
               <ul v-if="line.topics">
@@ -120,12 +119,11 @@
               <p v-else>{{ line }}</p>
             </span>
 
-            <hr class="divider">
-            <p></p>
+            <hr class="divider"><br/>
 
-            <blockquote>Nothing is a mistake.
-              There's no win and no fail.
-              There's only make. - John Cage in Stanford d.lab</blockquote>
+            <blockquote class="quote">
+              {{ sections.whoami.quote }}
+            </blockquote>
             
             <!-- <hr class="divider"> -->
           </section>

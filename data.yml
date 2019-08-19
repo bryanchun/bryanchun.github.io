@@ -25,6 +25,10 @@ sections:
                     desc: as part of my math minor, I took courses in probability and data science, and is keen on learning about topics like algebra for programming languages, formal methods with logic, computability theory and algorithmic game theory
                 -   desc: Currently learning about Security, Cryptography and Blockchain
             -   Apart from these, I am an avid photographer when I travel, and love calligraphy, graphic design and collecting quotes. You can also find me in badminton courts or matcha spots hunting.
+        quote: >
+            Nothing is a mistake.
+            There's no win and no fail.
+            There's only make. - John Cage in Stanford d.lab
     education:
         -   name: Bachelor of Engineering in Computer Science, Hong Kong University of Science and Technology (HKUST), Hong Kong
             time: Sep 2016 - Jun 2020
