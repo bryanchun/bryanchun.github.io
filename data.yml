@@ -48,11 +48,11 @@ sections:
             time: Sep - Nov 2019
             details:
                 -   Because there are so many fantastic resources from other universities for learning advanced programming languages concepts out there,
-                    like Cornell CS3110 and IMTO Function Programming courses, I always wanted a structured way to self-learn these materials and advance my understanding and skills.
+                    like Cornell CS3110 and IMTO Functional Programming courses, I always wanted a structured way to self-learn these materials and advance my understanding and skills.
                 -   I am fortunate to have Prof. Qiong Luo to support me on this endeavour during a semester in an independent study course, where I get to make some slides and present my learnings in weekly meetings.
                 -   This is also a valuable experience for me to share knowledge and prepare presentations as a new way of learning; I also learnt a lot more about the literature, active research and theoretical foundations, 
                     not to skip over the great discovery of various blogs and community of functional programmers around the world, making me more prepared to take on deeper practical projects later. 
-                -   The report explains details of this side project and summarises topics touched upon: Intro to Haskell, Monads, Concurrency and Parallelism, Theorem Proving (in Coq). Some slides are linked from the Schedule in the report too.
+                -   The report explains details of this side project and summarises topics touched upon - Intro to Haskell, Monads, Concurrency and Parallelism, Theorem Proving (in Coq). Some slides are linked from the Schedule in the report too.
             tech: >
                 > Haskell, Coq
             artifacts:
