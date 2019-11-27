@@ -23,7 +23,7 @@ sections:
                     desc: I did research and is actively learning in this area, concerning language design, features and paradigms; especially functional ones
                 -   name: Intersection of Mathematics and Computer Science
                     desc: as part of my math minor, I took courses in probability and data science, and is keen on learning about topics like algebra for programming languages, formal methods with logic, computability theory and algorithmic game theory
-                -   desc: Currently learning about Security, Cryptography and Blockchain
+                # -   desc: Currently learning about Security, Cryptography and Blockchain
             -   Apart from these, I am an avid photographer when I travel, and love calligraphy, graphic design and collecting quotes. You can also find me in badminton courts or matcha spots hunting.
         quote: >
             Nothing is a mistake.
@@ -43,6 +43,23 @@ sections:
             organisation: Hong Kong Applied Science and Technology Research Institute (ASTRI)
             url: https://www.astri.org
     projects:
+        -   title: >
+                Independent Work in Programming Languages
+            time: Sep - Nov 2019
+            details:
+                -   Because there are so many fantastic resources from other universities for learning advanced programming languages concepts out there,
+                    like Cornell CS3110 and IMTO Function Programming courses, I always wanted a structured way to self-learn these materials and advance my understanding and skills.
+                -   I am fortunate to have Prof. Qiong Luo to support me on this endeavour during a semester in an independent study course, where I get to make some slides and present my learnings in weekly meetings.
+                -   This is also a valuable experience for me to share knowledge and prepare presentations as a new way of learning; I also learnt a lot more about the literature, active research and theoretical foundations, 
+                    not to skip over the great discovery of various blogs and community of functional programmers around the world, making me more prepared to take on deeper practical projects later. 
+                -   The report explains details of this side project and summarises topics touched upon: Intro to Haskell, Monads, Concurrency and Parallelism, Theorem Proving (in Coq). Some slides are linked from the Schedule in the report too.
+            tech: >
+                > Haskell, Coq
+            artifacts:
+                -   name: Report
+                    url: https://www.dropbox.com/s/mt0nhdo91d0q33n/cs4971a_pl_report.pdf?dl=0
+            organisations:
+                -   name: COMP4971A Independent Work, HKUST
         -   title: >
                 Privacy-preserving programmable interface for Blockchain-stored Data
             time: Jun - Aug 2019
@@ -160,6 +177,9 @@ sections:
                 - Through workshops, nonprofit/company visits, a social innovation project and presentation on facilitating career exploration of college students
             tech: >
                 > Design Thinking Methodology, Design Sprints
+            organisations:
+                -   name: Exploring Social Innovation, Volunteers in Asia
+                    url: https://viaprograms.org/expand-your-boundaries/social-innovation-design-thinking/exploring-social-innovation/
         -   title: >
                 Procal: Programmable Scientific Calculator for Android
             time: Oct 2016 - Feb 2017, Aug - Sep 2017
