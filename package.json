@@ -3,12 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "",
-  "scripts": {
-    "generate": "yq eval --output-format=json resume.yaml > resume.json",
-    "test": "npm run generate; resume validate",
-    "build": "npm run generate; resume export resume.html; sed -i -e 's/--color-accent: \\(.*\\);/--color-accent: #336677;/' -e 's/--color-link: \\(.*\\);/--color-link: #1eaedb;/' -e 's/--color-background: \\(.*\\);/--color-background: #f0edea;/' resume.html",
-    "deploy": "cp resume.html index.html"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bryanchun/bryanchun.github.io.git"

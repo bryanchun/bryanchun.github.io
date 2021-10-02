@@ -6,8 +6,8 @@ Digital resume generator and its static website host
 
 ```bash
 npm install
-npm run build
-npm run deploy
+
+make deploy
 # Open ./index.html
 ```
 
