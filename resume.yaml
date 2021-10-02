@@ -1,0 +1,153 @@
+$schema: https://github.com/jsonresume/resume-schema/blob/master/schema.json?raw=true
+basics:
+  name: Bryan Chun
+  label: Software Engineer
+  image: https://github.com/bryanchun/bryanchun.github.io/blob/master/images/bryan_dc.jpg?raw=true
+  email: chun.hiu.sang@gmail.com
+  phone: +852 9328 9895
+  url: https://bryanchun.github.io
+  summary: ''  # TODO :D
+  location:
+    city: Hong Kong
+  profiles:
+    - network: GitHub
+      username: bryanchun
+      url: https://github.com/bryanchun
+    - network: LinkedIn
+      username: bryanchunhk
+      url: https://www.linkedin.com/in/bryanchunhk
+work:
+  - name: Clover Health
+    location: Hong Kong
+    position: Software Engineer II
+    url: https://www.cloverhealth.com
+    startDate: 2020-07
+    summary: Actively developing, designing, and supporting various health technology systems. Previously Software Engineer I in the first year here.
+    highlights:
+      - Full stack development in healthcare technology, primarily using Python/Django/gRPC/PostgreSQL/TypeScript/React
+      - Serving as one of the owners in the user modelling and management space of a new doctor-facing product used for facilitating patient visits
+      - Designed and implemented end-to-end user management workflows like password reset and email change for a new doctor-facing product
+      - Co-owned the public-facing website for the annual insurance member enrollment campaign; led a documentation revamp to improve engineering processes
+      - Participated in company-wide mentorship program to learn from experienced mentors, onboarded fellow engineers onto project areas new to them, helped to interview candidates in several panels
+      - Presented in our engineering team sharing topics like data wrangling and an intro to Vim
+  - name: Hong Kong Applied Science and Technology Research Institute
+    location: Hong Kong
+    summary: Conducted research and experiments on deep learning techniques and architectures for face-swapping to address security concerns in potential abuses
+    position: Summer Intern
+    startDate: 2018-06
+    endDate: 2018-07
+education:
+  - institution: Hong Kong University of Science and Technology
+    area: Computer Science
+    studyType: Bachelor of Engineering (First-class Honor), Minor in Mathematics
+    startDate: 2016-09
+    endDate: 2020-06
+    score: "3.63"
+    courses:
+      - Undergraduate Research Opportunities Program
+      - Deep Learning for Computer Vision
+      - Object-Oriented Programming and Data Structures / Discrete Mathematics / Design and Analysis of Algorithms / Software Engineering
+  - institution: Georgia Institute of Technology
+    area: Computer Science
+    studyType: Exchange Student
+    startDate: 2019-01
+    endDate: 2019-05
+    score: "4.0"
+    courses:
+      - Data and Visual Analytics
+      - Machine Learning
+  - institution: Queen's College, Hong Kong
+    studyType: Hong Kong Diploma of Secondary Education
+    startDate: 2010-09
+    endDate: 2016-06
+skills:
+  - name: Programming & Tools
+    keywords:
+      - Python
+      - Kotlin/Java
+      - C/C++
+      - JavaScript/TypeScript
+      - HTML5/CSS3
+      - Linux
+      - Bash
+      - Git
+      - Vim
+      - SQL/PostgreSQL
+      - Elixir
+      - Functional Programming
+      - IntelliJ IDEA/PyCharm/VSCode
+  - name: Software Engineering
+    keywords:
+      - Engineering estimations
+      - Agile sprint processes
+      - End-to-end system design
+  - name: Languages
+    keywords:
+      - English
+      - Cantonese
+      - Mandarin
+      - Japanese
+languages:
+  - language: English
+    fluency: Fluent
+  - language: Cantonese
+    fluency: Native
+  - language: Mandarin
+    fluency: Fluent
+  - language: Japanese
+    fluency: Elementary
+interests:
+  - name: Photography
+  - name: Badminton
+projects:
+  - name: ZINC - Programming assignment submission and Auto-grading system
+    description: A new online assignment submission and automatic grader system for programming assignments for the HKUST Department of Computer Science
+    highlights:
+      - Mainly responsible for Auto-Grader design and development
+      - Taking inspiration from continuous integration pipelines, we designed a declarative and flexible way to grade programming assignments, where course staff can choose what grading features to use for an assignment, have them run on containerized environments remotely, and get an elaborate grading report generated automatically for sharing the results with students
+      - Won Departmental Best FYP Award, was a HKUST President's Cup 2020 Finalist
+      - Continued to maintain the project voluntarily after it went live serving hundreds of students in course offerings by contributing fixes and features as well as taking part in code review and technical design discussions
+    keywords:
+      - Kotlin/JVM
+      - Docker
+      - Redis
+      - PostgreSQL
+    startDate: 2019-05
+    roles:
+      - Developer
+    entity: HKUST
+    type: system
+  - name: Microsoft Imagine Cup
+    description: Developed an emotion recognition system for mental status monitoring of schoolchildren using Python and Azure
+    startDate: 2018-01
+    endDate: 2018-05
+    roles:
+      - Developer
+  - name: USThing UI revamp
+    description: Wireframed a new design with interactions for the home page and several features using Sketch 
+    startDate: 2017-07
+    endDate: 2017-09
+    url: https://usthing.xyz/
+    roles:
+      - UI designer
+    entity: USThing
+  - name: Exploring Social Innovation
+    description: Joined a culturally diverse cohort in a 2-week social innovation program on Design Thinking, with a focus on education innovation
+    startDate: 2017-07
+    endDate: 2017-07
+    location: San Francisco
+    url: https://viaprograms.org/expand-your-boundaries/social-innovation-design-thinking/exploring-social-innovation
+    roles:
+      - Program Participant
+    entity: Volunteers in Asia
+  - name: Mobile App Design Contest
+    description: Created a fully programmable calculator app on Android, attained First Runner-up in a group of 4
+    startDate: 2016-12
+    endDate: 2017-02
+    roles:
+      - Developer
+    entity: HKUST
+meta:
+  canonical: https://github.com/jsonresume/resume-schema/blob/master/schema.json?raw=true
+  version: v1.0.0
+  lastModified: 2020-11-18T14:41:00
