@@ -8,7 +8,7 @@ Digital resume generator and its static website host
 npm install
 npm run build
 npm run deploy
-# Open public/index.html
+# Open ./index.html
 ```
 
 ### Dependencies
