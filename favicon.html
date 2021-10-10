@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favicon generator</title>
+  
+  <style>
+    #instructions {
+      font-family: sans-serif;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h3 id="instructions">Download the canvas as an image using "Save image as", name it "favicon.ico".</h3>
+
+  <div>
+    <canvas id="favicon" width="200" height="200"></canvas>
+  </div>
+  <script>
+    const canvas = document.getElementById("favicon");
+    let context = canvas.getContext("2d");
+
+    const gradient = context.createLinearGradient(90, 50, 150, 150);
+    gradient.addColorStop(0, "#bd75b0");
+    gradient.addColorStop(0.5, "#e3a0b1");
+    gradient.addColorStop(1, "#fdc393");
+
+    context.beginPath();
+    context.arc(
+      canvas.width / 2,
+      canvas.height / 2,
+      80,
+      0,
+      2 * Math.PI
+    );
+    context.fillStyle = gradient;
+    context.fill();
+  </script>
+</body>
+</html>
