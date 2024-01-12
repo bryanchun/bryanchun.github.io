@@ -4,11 +4,10 @@ basics:
   label: Software Engineer
   image: https://github.com/bryanchun/bryanchun.github.io/blob/master/images/bryan_dc.jpg?raw=true
   email: chun.hiu.sang@gmail.com
-  phone: +852 9328 9895
   url: https://bryanchun.github.io
   summary: ''  # TODO :D
   location:
-    city: Hong Kong
+    city: Toronto, Canada
   profiles:
     - network: GitHub
       username: bryanchun

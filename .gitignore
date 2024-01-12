@@ -3,7 +3,7 @@ node_modules/
 
 # Generated artifacts
 resume.json
-resume.html
+resume.html*
 *.pdf
 
 # Editor configurations
