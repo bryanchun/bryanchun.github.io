@@ -10,7 +10,7 @@
   "author": "Bryan Chun",
   "license": "MIT",
   "dependencies": {
-    "jsonresume-theme-even": "^0.12.0",
-    "resume-cli": "^3.0.5"
+    "jsonresume-theme-even": "^0.22.0",
+    "resume-cli": "^3.0.8"
   }
 }

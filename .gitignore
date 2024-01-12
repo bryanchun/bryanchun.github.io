@@ -8,3 +8,6 @@ resume.html
 
 # Editor configurations
 tags*
+
+# Platform
+.DS_Store
