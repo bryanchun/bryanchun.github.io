@@ -17,13 +17,25 @@ basics:
       url: https://www.linkedin.com/in/bryanchunhk
 work:
   - name: Clover Health
+    location: Toronto, Canada
+    position: Software Engineer III
+    url: https://www.cloverhealth.com
+    startDate: 2022-07
+    summary: Actively developing, designing, and supporting various health technology systems. Previously Software Engineer I in the first year here.
+    highlights:
+      - Full stack development in healthcare technology, primarily using Python/Django/gRPC/PostgreSQL/TypeScript/React
+      - Worked in 3 domains, namely Clinical Insights — providing better patient care management, Customer Success — improving user management infrastructure, and Electronic Health Record system integrations
+      - Brought up the frontend standard of the team to speed up development, designed and built user-facing features end-to-end including new lab result notifications, treatment recommendations for serious diseases
+      - Served as team lead in revamping user management workflow and user modelling, onboarded new team members to the team
+      - Active contributor in team code reviews, code style discussions, technical designs
+  - name: Clover Health
     location: Hong Kong
     position: Software Engineer II
     url: https://www.cloverhealth.com
     startDate: 2020-07
-    summary: Actively developing, designing, and supporting various health technology systems. Previously Software Engineer I in the first year here.
+    endDate: 2022-06
     highlights:
-      - Full stack development in healthcare technology, primarily using Python/Django/gRPC/PostgreSQL/TypeScript/React
+      - Designed and implemented an internal troubleshooting tool and a public-facing demo site for the platform
       - Serving as one of the owners in the user modelling and management space of a new doctor-facing product used for facilitating patient visits
       - Designed and implemented end-to-end user management workflows like password reset and email change for a new doctor-facing product
       - Co-owned the public-facing website for the annual insurance member enrollment campaign; led a documentation revamp to improve engineering processes
@@ -90,8 +102,10 @@ languages:
   - language: Japanese
     fluency: Elementary
 interests:
-  - name: Photography
+  - name: Swing dancing
   - name: Badminton
+  - name: Volleyball
+  - name: Photography
 projects:
   - name: ZINC - Programming assignment submission and Auto-grading system
     description: A new online assignment submission and automatic grader system for programming assignments for the HKUST Department of Computer Science
